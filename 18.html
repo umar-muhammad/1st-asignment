@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var travelDestinations = ["Paris", "Tokyo", "Venice", "New York", "Machu Picchu"];
+
+console.log("Original Order: " + travelDestinations.join(', '));
+
+console.log("Alphabetical Order: " + travelDestinations.slice().sort().join(', '));
+
+console.log("Original Order (not modified): " + travelDestinations.join(', '));
+
+console.log("Reverse Alphabetical Order: " + travelDestinations.slice().sort().reverse().join(', '));
+
+console.log("Original Order (not modified): " + travelDestinations.join(', '));
+
+travelDestinations.reverse();
+console.log("Reversed Order: " + travelDestinations.join(', '));
+
+travelDestinations.reverse();
+console.log("Original Order (after reversing again): " + travelDestinations.join(', '));
+
+travelDestinations.sort();
+console.log("Alphabetical Order (after sorting): " + travelDestinations.join(', '));
+
+travelDestinations.sort(function(a, b) {
+    return b.localeCompare(a);
+});
+console.log("Reverse Alphabetical Order (after sorting): " + travelDestinations.join(', '));
+</script>
+</body>
+</html>

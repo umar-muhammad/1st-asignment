@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+let country = 'USA';
+console.log("Is country == 'USA'? I predict True.");
+console.log(country == 'USA');  // True
+
+let continent = 'Europe';
+console.log("Is continent != 'Asia'? I predict True.");
+console.log(continent != 'Asia');  // True
+
+let color = 'Red';
+console.log("Is color.toLowerCase() == 'red'? I predict True.");
+console.log(color.toLowerCase() == 'red');  // True
+
+let food = 'PIZZA';
+console.log("Is food.toLowerCase() != 'pizza'? I predict True.");
+console.log(food.toLowerCase() != 'pizza');  // True
+
+let num1 = 7;
+let num2 = 10;
+console.log("Is num1 < num2? I predict True.");
+console.log(num1 < num2);  // True
+
+console.log("Is num1 >= num2? I predict False.");
+console.log(num1 >= num2);  // False
+
+let sunny = true;
+let warm = false;
+console.log("Is it sunny and warm? I predict False.");
+console.log(sunny && warm);  // False
+
+let raining = true;
+let windy = false;
+console.log("Is it raining or windy? I predict True.");
+console.log(raining || windy);  // True
+
+let fruitsArray = ['apple', 'orange', 'banana', 'grape'];
+let fruitToCheck = 'banana';
+console.log(`Is '${fruitToCheck}' in fruitsArray? I predict True.`);
+console.log(fruitsArray.includes(fruitToCheck));  // True
+
+let colorsArray = ['red', 'blue', 'green'];
+let colorToCheck = 'yellow';
+console.log(`Is '${colorToCheck}' not in colorsArray? I predict True.`);
+console.log(!colorsArray.includes(colorToCheck));  // True
+    </script>
+</body>
+</html>

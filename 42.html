@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function show_magicians(magicians) {
+    for (let i = 0; i < magicians.length; i++) {
+        console.log(magicians[i]);
+    }
+}
+
+function make_great(magicians) {
+    for (let i = 0; i < magicians.length; i++) {
+        magicians[i] = `the Great ${magicians[i]}`;
+    }
+}
+
+let magicianNames = ['David Copperfield', 'Houdini', 'Derren Brown', 'Penn & Teller'];
+
+make_great(magicianNames);
+
+show_magicians(magicianNames);
+
+    </script>
+</body>
+</html>

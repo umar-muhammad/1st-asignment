@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var fruits = ["apple", "banana", "cherry"];
+
+      try {
+        var indexError = fruits[3];
+        console.log("Accessed element at index 3: " + indexError);
+      } catch (error) {
+        console.log("An error occurred: " + error);
+      }
+
+      fruits[1] = "strawberry";
+
+      console.log("Corrected array: " + fruits.join(", "));
+    </script>
+  </body>
+</html>

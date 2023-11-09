@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var guestList = ["Albert Einstein", "Leonardo da Vinci", "Marie Curie", "Nelson Mandela"];
+
+console.log("Unfortunately, " + guestList[2] + " can't make it.");
+
+guestList[2] = "Isaac Newton";
+
+for (var i = 0; i < guestList.length; i++) {
+    console.log("Dear " + guestList[i] + ", you are cordially invited to dinner at my place.");
+}
+
+    </script>
+</body>
+</html>

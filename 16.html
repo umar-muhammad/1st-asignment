@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var guestList = ["Marie Curie", "Albert Einstein", "Stephen Hawking", "Leonardo da Vinci", "Isaac Newton", "Nelson Mandela", "Charles Darwin"];
+
+console.log("Good news! I found a bigger dinner table.");
+
+guestList.unshift("Galileo Galilei");
+
+guestList.splice(4, 0, "Ada Lovelace");
+
+guestList.push("Nikola Tesla");
+
+for (var i = 0; i < guestList.length; i++) {
+    console.log("Dear " + guestList[i] + ", you are cordially invited to dinner at my place.");
+}
+    </script>
+</body>
+</html>

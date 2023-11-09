@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function make_album(artist, title, tracks = null) {
+    let album = {
+        artist: artist,
+        title: title
+    };
+
+    if (tracks !== null) {
+        album.tracks = tracks;
+    }
+
+    return album;
+}
+
+let album1 = make_album('Artist1', 'Album One', 12);
+let album2 = make_album('Artist2', 'Album Two');
+let album3 = make_album('Artist3', 'Album Three', 15);
+
+console.log(album1);
+console.log(album2);
+console.log(album3);
+ 
+    </script>
+</body>
+</html>

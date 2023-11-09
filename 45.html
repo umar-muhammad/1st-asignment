@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function car_info(manufacturer, model, ...options) {
+    let car = {
+        manufacturer: manufacturer,
+        model: model
+    };
+
+    for (let i = 0; i < options.length; i += 2) {
+        let key = options[i];
+        let value = options[i + 1];
+        car[key] = value;
+    }
+
+    return car;
+}
+
+let myCar = car_info('Toyota', 'Camry', 'color', 'Blue', 'year', 2022);
+
+console.log(myCar);
+
+    </script>
+</body>
+</html>

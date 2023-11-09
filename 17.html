@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var guestList = ["Galileo Galilei", "Marie Curie", "Albert Einstein", "Stephen Hawking", "Ada Lovelace", "Isaac Newton", "Nelson Mandela", "Charles Darwin", "Nikola Tesla"];
+
+console.log("I can invite only two people for dinner.");
+
+while (guestList.length > 2) {
+    var removedGuest = guestList.pop();
+    console.log("Sorry, " + removedGuest + ", I can't invite you to dinner.");
+}
+
+for (var i = 0; i < guestList.length; i++) {
+    console.log("Dear " + guestList[i] + ", you are still invited to dinner.");
+}
+
+guestList.pop();
+guestList.pop();
+
+console.log("Empty guest list: " + guestList);
+
+    </script>
+</body>
+</html>
